@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//change row and column value to set the canvas size
 int row = 5;
 int col = 4;
 
+//creates row boundary
 int row_line(){
-
 	printf("\n");
 	for(int i=0; i<col; i++){printf(" -----");}
 	printf("\n");
 }
 
-
+//returns the count of alive neighbours
 int count_live_neighbour_cell(int a[row][col], int r, int c){
 	int i, j, count=0;
 	for(i=r-1; i<=r+1; i++){
@@ -22,17 +23,13 @@ int count_live_neighbour_cell(int a[row][col], int r, int c){
 			if(a[i][j]==1){
 				count++;
 			}
-			// printf("a[%d][%d] = %d\n",i,j,a[i][j]);
 		}
 	}
-
 	return count;
 }
 
 int main(){
-
-
-    int a[row][col], b[row][col];
+   	int a[row][col], b[row][col];
 	int i,j;
 	int neighbour_live_cell;
 
@@ -71,7 +68,6 @@ int main(){
 		}
 	}
 
-
 	//print next generation 
  	row_line(row);
 	for(i=0; i<row; i++){
@@ -81,7 +77,6 @@ int main(){
 		}
 		row_line(row);
 	}
-
 
 	return 0;
 }
