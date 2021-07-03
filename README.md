@@ -9,6 +9,7 @@ Rules:
 
 If the value of call is "1", it means cell is alive else it will be "0" which means cell is dead.
 
+```
 Input/Initial Stage:
  ----- ----- ----- -----
 :  1  :  1  :  0  :  0  :
@@ -34,3 +35,4 @@ Input/Initial Stage:
  ----- ----- ----- -----
 :  1  :  0  :  1  :  1  :
  ----- ----- ----- -----
+ ```
