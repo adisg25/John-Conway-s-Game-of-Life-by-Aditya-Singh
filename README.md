@@ -1,6 +1,6 @@
 # John-Conway-s-Game-of-Life-by-Aditya-Singh
 # https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
-This is the code for the John Conway Game of Life in C langauge where initial stage is taken as input and based on game rules next stage is show as output.
+This is the code for the John Conway Game of Life in C langauge where initial stage is taken as input (Random in our case) and based on game rules next stage is show as output.
 
 Rules:
 1. Any live cell with two or three live neighbours survives.
